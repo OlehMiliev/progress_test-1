@@ -4,13 +4,10 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-<!--  <link rel="preconnect" href="https://fonts.googleapis.com">-->
-<!--  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>-->
-<!--  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">-->
-  <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css">
   <link href="./css/style.css" rel="stylesheet">
   <title>Progress Rent</title>
 </head>
@@ -20,7 +17,9 @@
     <section class="container">
       <div class="site_bar_inner">
         <div class="logo_block_img">
-          <img src="./img/main_logo.png" alt="main_logo">
+          <a href="#">
+            <img src="./img/main_logo.png" alt="main_logo">
+          </a>
         </div>
         <ul class="nav_list">
           <li class="nav_list_item">
@@ -85,18 +84,109 @@
             </ul>
           </li>
         </ul>
-        <a href="#" class="call_btn">Заказать звонок</a>
+        <a href="#" class="call_btn">
+          <span>Заказать звонок</span>
+        </a>
+        <div class="burger_menu_wrapper">
+          <div class="burger_menu_sub_wrapper">
+            <div class="burger_menu_line"></div>
+          </div>
+        </div>
       </div>
     </section>
   </div>
+  <div class="make_call_popup_wrapper">
+    <div class="make_call_popup_inner">
+      <div class="call_close_icon">
+        <img src="./img/close_icon.png" alt="">
+      </div>
+      <div class="call_descr_inner">
+        <div class="call_main_title">Заказать звонок</div>
+        <div class="call_main_sub_title">Заполните поля ниже, и мы Вам перезвоним <br> и обсудим любой Ваш вопрос
+        </div>
+      </div>
+      <form action="" class="call_form_inner">
+        <div class="call_input_inner">
+          <lable>Ваше имя</lable>
+          <input type="text" placeholder="Имя">
+        </div>
+        <div class="call_input_inner">
+          <lable>Ваш телефон</lable>
+          <input type="text" placeholder="+7">
+        </div>
+        <button class="call_submit_btn">Заказать звонок</button>
+      </form>
+    </div>
+  </div>
+  <div class="mobil_site_bar_popup">
+    <div class="mobil_site_bar_popup_inner">
+      <div class="mobil_site_bar_close_btn">
+        <img src="./img/close_white_icon_2.png" alt="">
+      </div>
+      <ul class="nav_list_2">
+        <li class="nav_list_item">
+          Аренда спецтехники
+          <ul class="drop_menu">
+            <li class="drop_menu_item">Аренда спецтехники</li>
+            <li class="drop_menu_item">
+              <a href="#">Автокраны</a>
+            </li>
+            <li class="drop_menu_item">
+              <a href="#">Вилочные погрузчики</a>
+            </li>
+            <li class="drop_menu_item">
+              <a href="#">Гидромолоты</a>
+            </li>
+            <li class="drop_menu_item">
+              <a href="#">Грейферы</a>
+            </li>
+            <li class="drop_menu_item">
+              <a href="#">Гусенечные эскаваторы</a>
+            </li>
+            <li class="drop_menu_item">
+              <a href="#">Длинномеры</a>
+            </li>
+            <li class="drop_menu_item">
+              <a href="#">Колесные эскаваторы</a>
+            </li>
+          </ul>
+        </li>
+        <li class="nav_list_item">
+          <a href="#">Каталог</a>
+        </li>
+        <li class="nav_list_item">
+          <a href="#">О компании</a>
+        </li>
+        <li class="nav_list_item">
+          <a href="#">Контакты</a>
+        </li>
+      </ul>
+      <div class="mobil_site_bar_bottom_inner">
+        <a href="#" class="mobil_site_bar_tel">+7(495)790 84 59</a>
+        <div class="mobil_site_bar_email">info@megarent.ru</div>
+        <div class="mobil_site_bar_adres">
+          Москва, просп. <br> Мира, 102, стр. 24
+        </div>
+        <div class="mobil_site_bar_social">
+          <a href="#"><img src="./img/wats_up_circle.png" alt=""></a>
+          <a href="#"><img src="./img/inst.png" alt=""></a>
+          <a href="#"><img src="./img/viber_circle.png" alt=""></a>
+          <a href="#"><img src="./img/tg_circle.png" alt=""></a>
+        </div>
+        <div class="mobil_site_make_call_btn">
+          Заказать звонок
+        </div>
+      </div>
+    </div>
+  </div>
 </header>
-<main class="catalog_page">
+<main class="main_page">
   <div class="main_slider slider_wrapper swiper">
     <div class="slider_content_wrapper swiper-wrapper">
       <div class="slider_slide swiper-slide">
         <div class="container">
           <div class="slide_cont_inner">
-            <div class="slider_cont_title">Нужен<br>автокран<br>сегодня?</div>
+            <div class="slider_cont_title">Нужен<br> автокран<br> сегодня?</div>
             <div class="slider_cont_sub_title">Срочная доставка от 2 часов. Снизим стоимость аренды при<br>заказе
               нескольких
               машин!
@@ -209,7 +299,7 @@
           <img src="./img/close_icon.png" alt="">
         </div>
         <div class="cat_popup_top_block">
-          <div class="cat_popup_top_title">Аренда техники</div>
+          <div class="cat_popup_top_title">Арендовать автокран «Liebherr LTM 1050»  </div>
           <div class="cat_popup_top_text">Чтобы арендовать технику, заполните поля ниже</div>
         </div>
         <div class="cat_popup_bottom_block">
@@ -218,9 +308,6 @@
               <img src="./img/kran.png" alt="">
             </div>
             <div class="cat_popup_descr_inner">
-              <div class="cat_popup_descr_title">
-                Автокран «Liebherr LTM 1050»
-              </div>
               <div class="cat_popup_descr_spec">
                 <div class="cat_sliders_spec_row">
                   <div class="min_title">Вылет стрелы</div>
@@ -1053,6 +1140,9 @@
           <input type="text" placeholder="Ваше имя">
           <input type="text" placeholder="Мобильный телефон">
           <button class="help_chose_btn">Получить консультацию</button>
+          <!--          <div class="form_success_popup">-->
+          <!--            Письмо успешно отправлено-->
+          <!--          </div>-->
         </form>
       </div>
     </section>
@@ -1172,7 +1262,7 @@
           </div>
           <div class="doc_link_wrapper">
             <div class="doc_link_inner">
-              <a href="#">Проверить организацию</a>
+              <a href="https://sbis.ru/contragents/7716774583/771701001" target="_blank">Проверить организацию</a>
             </div>
             <div class="doc_link_inner">
               <a class="doc_rpn" href="#">Скачать реквизиты</a>
@@ -1223,6 +1313,53 @@
       </div>
     </div>
   </div>
+  <!--POPUPS-->
+  <div class="doc_popup_wrapper swiper">
+    <div class="doc_popup_inner swiper-wrapper">
+      <div class="doc_popup_close_icon">
+        <img src="./img/close_white_icon.png" alt="">
+      </div>
+      <div class="doc_popup_item swiper-slide">
+        <img src="./img/lic_1.png" alt="">
+      </div>
+      <div class="doc_popup_item swiper-slide">
+        <img src="./img/lic_2.png" alt="">
+      </div>
+      <div class="swiper-button-prev doc_popup_prev">
+        <img src="./img/doc_arrow.png" alt="">
+      </div>
+      <div class="swiper-button-next doc_popup_next">
+        <img src="./img/doc_arrow.png" alt="">
+      </div>
+    </div>
+  </div>
+  <div class="request_popup_wrapper">
+    <div class="request_popup_inner">
+      <div class="call_close_icon_2">
+        <img src="./img/close_icon.png" alt="">
+      </div>
+      <div class="call_descr_inner">
+        <div class="call_main_title">Заказать звонок</div>
+        <div class="call_main_sub_title">Заполните поля ниже, и мы Вам перезвоним <br> и обсудим любой Ваш вопрос
+        </div>
+      </div>
+      <form action="" class="call_form_inner">
+        <div class="call_input_inner">
+          <lable>Ваше имя</lable>
+          <input type="text" placeholder="Имя">
+        </div>
+        <div class="call_input_inner">
+          <lable>Ваш телефон</lable>
+          <input type="text" placeholder="+7">
+        </div>
+        <div class="call_input_inner">
+          <lable>Тип техники</lable>
+          <input type="text" placeholder="Техника">
+        </div>
+        <button class="call_submit_btn">Заказать звонок</button>
+      </form>
+    </div>
+  </div>
 </main>
 <footer>
   <section class="container">
@@ -1261,8 +1398,39 @@
       </div>
     </div>
   </section>
+  <div class="private_politic_popup">
+    <div class="private_politic_popup_wrapper">
+      <div class="private_politic_inner">
+        <div class="pp_close_btn">
+          <img src="./img/close_icon.png" alt="">
+        </div>
+        <div class="private_politic_popup_title">
+          Политика в отношении обработки персональных данных
+        </div>
+        <div class="private_politic_popup_text">
+          <div class="pp_sub_title"> 1. Общие положения</div>
+          <ul class="pp_list">
+            <li>Настоящая политика обработки персональных данных составлена в соответствии с требованиями Федерального закона от 27.07.2006. №152-ФЗ «О персональных данных» (далее - Закон о персональных данных) и определяет порядок обработки персональных данных и меры по обеспечению безопасности персональных данных, предпринимаемые Михайловым Иваном Сергеевичем (далее – Оператор).</li>
+            <li>1.1. Оператор ставит своей важнейшей целью и условием осуществления своей деятельности соблюдение прав и свобод человека и гражданина при обработке его персональных данных, в том числе защиты прав на неприкосновенность частной жизни, личную и семейную тайну.</li>
+            <li>1.2. Настоящая политика Оператора в отношении обработки персональных данных (далее – Политика) применяется ко всей информации, которую Оператор может получить о посетителях веб-сайта httpsː//thismywebsite·com.</li>
+            <li>2. Основные понятия, используемые в Политике</li>
+            <li>2.1. Автоматизированная обработка персональных данных – обработка персональных данных с помощью средств вычислительной техники.</li>
+            <li>2.2. Блокирование персональных данных – временное прекращение обработки персональных данных (за исключением случаев, если обработка необходима для уточнения персональных данных).</li>
+            <li>2.3. Веб-сайт – совокупность графических и информационных материалов, а также программ для ЭВМ и баз данных, обеспечивающих их доступность в сети интернет по сетевому адресу httpsː//thismywebsite·com.</li>
+            <li>2.4. Информационная система персональных данных — совокупность содержащихся в базах данных персональных данных, и обеспечивающих их обработку информационных технологий и технических средств.</li>
+            <li>2.5. Обезличивание персональных данных — действия, в результате которых невозможно определить без использования дополнительной информации принадлежность персональных данных конкретному Пользователю или иному субъекту персональных данных.</li>
+            <li>2.6. Обработка персональных данных – любое действие (операция) или совокупность действий (операций), совершаемых с использованием средств автоматизации или без использования таких средств с персональными данными, включая сбор, запись, систематизацию, накопление, хранение, уточнение (обновление, изменение), извлечение, использование, передачу (распространение, предоставление, доступ), обезличивание, блокирование, удаление, уничтожение персональных данных.</li>
+            <li>2.7. Оператор – государственный орган, муниципальный орган, юридическое или физическое лицо, самостоятельно или совместно с другими лицами организующие и (или) осуществляющие обработку персональных данных, а также определяющие цели обработки персональных данных, состав персональных данных, подлежащих обработке, действия (операции), совершаемые с персональными данными.</li>
+            <li>2.8. Персональные данные – любая информация, относящаяся прямо или косвенно к определенному или определяемому Пользователю веб-сайта httpsː//thismywebsite·com.</li>
+            <li>2.9. Персональные данные, разрешенные субъектом персональных данных для распространения, - персональные данные, доступ неограниченного круга лиц к которым предоставлен субъектом персональных данных путем дачи согласия на обработку персональных данных, разрешенных субъектом персональных данных для распространения в порядке, предусмотренном Законом о персональных данных (далее - персональные данные, разрешенные для распространения).</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
 </footer>
 <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
 <script src="./js/script.js"></script>
 </body>
 </html>
+
