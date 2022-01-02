@@ -52,6 +52,7 @@ let call_close_icon = document.querySelector('.call_close_icon')
 let body_overflow = document.body
 
 
+
 call_btn.addEventListener('click', function(){
   make_call_popup_wrapper.classList.toggle('make_call_popup_wrapper_active');
   body_overflow.style.overflow = "hidden"
@@ -84,7 +85,6 @@ let doc_popup_close_icon = document.querySelectorAll('.doc_popup_close_icon')
 let site_bar_wrapper = document.querySelector('.site_bar_wrapper')
 
 
-
 doc_img_inner.forEach(function (button_2) {
   button_2.addEventListener('click', function () {
     doc_popup_wrapper.classList.add('doc_popup_wrapper_active')
@@ -99,15 +99,6 @@ doc_popup_close_icon.forEach(function (button_3){
    body_overflow.style.overflow = "unset"
  })
 });
-// ??
-// doc_img_inner.addEventListener('click',function (){
-//   doc_popup_wrapper.classList.toggle('doc_popup_wrapper_active')
-//   site_bar_wrapper.style.position = "unset"
-// });
-// doc_popup_close_icon .addEventListener('click', function (){
-//   doc_popup_wrapper.classList.remove('doc_popup_wrapper_active')
-//   site_bar_wrapper.style.position = "fixed"
-// })
 
 
 let request_btn = document.querySelector('.request_btn');
