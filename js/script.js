@@ -17,6 +17,10 @@ new Swiper ('.catalog_sliders_col_item',{
   pagination:{
     el:'.swiper-pagination-catalog',
     clickable:true,
+  },
+  navigation:{
+    nextEl: '.catalog_sliders_btn_prev',
+    prevEl: '.catalog_sliders_btn_next',
   }
 });
 
@@ -45,13 +49,17 @@ new Swiper ('.catalog_sliders_col_item',{
 let call_btn = document.querySelector('.call_btn')
 let make_call_popup_wrapper = document.querySelector('.make_call_popup_wrapper')
 let call_close_icon = document.querySelector('.call_close_icon')
+let body_overflow = document.body
+
 
 call_btn.addEventListener('click', function(){
-  make_call_popup_wrapper.classList.toggle('make_call_popup_wrapper_active')
+  make_call_popup_wrapper.classList.toggle('make_call_popup_wrapper_active');
+  body_overflow.style.overflow = "hidden"
 
 });
 call_close_icon.addEventListener('click',function (){
-  make_call_popup_wrapper.classList.remove('make_call_popup_wrapper_active')
+  make_call_popup_wrapper.classList.remove('make_call_popup_wrapper_active');
+  body_overflow.style.overflow = "unset"
 });
 
 let private_politic_text = document.querySelector('.private_politic_text');
@@ -60,9 +68,11 @@ let pp_close_btn = document.querySelector('.pp_close_btn')
 
 private_politic_text.addEventListener('click',function (){
   private_politic_popup.classList.toggle('private_politic_popup_active')
+  body_overflow.style.overflow = "hidden"
 });
 pp_close_btn.addEventListener('click', function (){
   private_politic_popup.classList.remove('private_politic_popup_active')
+  body_overflow.style.overflow = "unset"
 });
 
 
@@ -79,13 +89,14 @@ doc_img_inner.forEach(function (button_2) {
   button_2.addEventListener('click', function () {
     doc_popup_wrapper.classList.add('doc_popup_wrapper_active')
     site_bar_wrapper.style.position = "unset"
+    body_overflow.style.overflow = "hidden"
   })
 })
 doc_popup_close_icon.forEach(function (button_3){
  button_3.addEventListener('click',function (){
    doc_popup_wrapper.classList.remove('doc_popup_wrapper_active')
    site_bar_wrapper.style.position = "fixed"
-
+   body_overflow.style.overflow = "unset"
  })
 });
 // ??
@@ -103,13 +114,16 @@ let request_btn = document.querySelector('.request_btn');
 let request_popup_wrapper = document.querySelector('.request_popup_wrapper');
 let call_close_icon_2 = document.querySelector('.call_close_icon_2');
 
+
 request_btn.addEventListener('click',function (){
-  request_popup_wrapper.classList.toggle('request_popup_wrapper_active')
-  site_bar_wrapper.style.position = "unset"
+  request_popup_wrapper.classList.toggle('request_popup_wrapper_active');
+  site_bar_wrapper.style.position = "unset";
+  body_overflow.style.overflow = "hidden"
 });
 call_close_icon_2.addEventListener('click',function (){
-  request_popup_wrapper.classList.remove('request_popup_wrapper_active')
-  site_bar_wrapper.style.position = "fixed"
+  request_popup_wrapper.classList.remove('request_popup_wrapper_active');
+  site_bar_wrapper.style.position = "fixed";
+  body_overflow.style.overflow = "unset"
 });
 
 let burger_menu_wrapper = document.querySelector('.burger_menu_wrapper');
@@ -164,6 +178,6 @@ help_chose_btn.addEventListener('click', function (sent_form){
 });
 
 
-// custom_scroll_bar
+
 
 
