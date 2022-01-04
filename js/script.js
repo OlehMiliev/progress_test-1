@@ -52,7 +52,6 @@ let call_close_icon = document.querySelector('.call_close_icon')
 let body_overflow = document.body
 
 
-
 call_btn.addEventListener('click', function(){
   make_call_popup_wrapper.classList.toggle('make_call_popup_wrapper_active');
   body_overflow.style.overflow = "hidden"
@@ -112,6 +111,16 @@ doc_popup_close_icon.forEach(function (button_3){
    body_overflow.style.overflow = "unset"
  })
 });
+doc_popup_wrapper.addEventListener('click', function (){
+  doc_popup_wrapper.classList.remove('doc_popup_wrapper_active');
+  body_overflow.style.overflow = "unset"
+})
+document.querySelector('.doc_popup_next').addEventListener('click', function (e){
+  e.stopPropagation()
+})
+document.querySelector('.doc_popup_prev').addEventListener('click', function (e){
+  e.stopPropagation()
+})
 
 
 let request_btn = document.querySelector('.request_btn');
@@ -192,7 +201,7 @@ let mob_drop = document.querySelector('.mob_drop')
 let drop_menu = document.querySelector('.drop_menu')
 
 mob_drop.addEventListener('click', function (close_drop_mob){
- 
+
 })
 
 
