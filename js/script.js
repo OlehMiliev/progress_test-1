@@ -63,6 +63,14 @@ call_close_icon.addEventListener('click',function (){
   body_overflow.style.overflow = "unset"
 });
 
+make_call_popup_wrapper.addEventListener('click', function (){
+  make_call_popup_wrapper.classList.remove('make_call_popup_wrapper_active');
+})
+
+document.querySelector('.make_call_popup_inner').addEventListener('click', function (e){
+  e.stopPropagation()
+})
+
 let private_politic_text = document.querySelector('.private_politic_text');
 let private_politic_popup = document.querySelector('.private_politic_popup')
 let pp_close_btn = document.querySelector('.pp_close_btn')
@@ -72,6 +80,11 @@ private_politic_text.addEventListener('click',function (){
   body_overflow.style.overflow = "hidden"
 });
 pp_close_btn.addEventListener('click', function (){
+  private_politic_popup.classList.remove('private_politic_popup_active')
+  body_overflow.style.overflow = "unset"
+});
+
+private_politic_popup.addEventListener('click',function (){
   private_politic_popup.classList.remove('private_politic_popup_active')
   body_overflow.style.overflow = "unset"
 });
@@ -150,6 +163,13 @@ cat_close_icon.forEach(function (close_popup_cat){
     body_body.style.overflow = "unset"
   })
 })
+cat_sliders_popup_wrapper.addEventListener('click',function (){
+  cat_sliders_popup_wrapper.classList.remove('cat_sliders_popup_wrapper_active')
+  body_body.style.overflow = "unset"
+})
+document.querySelector('.cat_sliders_popup_sub_wrapper').addEventListener('click', function (e){
+  e.stopPropagation()
+})
 
 // burger_popup
 
@@ -168,6 +188,12 @@ help_chose_btn.addEventListener('click', function (sent_form){
   sent_form.preventDefault()
 });
 
+let mob_drop = document.querySelector('.mob_drop')
+let drop_menu = document.querySelector('.drop_menu')
+
+mob_drop.addEventListener('click', function (close_drop_mob){
+ 
+})
 
 
 
